@@ -1,0 +1,33 @@
+{
+  "name": "@qmoosa/pqc-mldsa-sdk",
+  "version": "1.0.0",
+  "description": "QMOOSA Post-Quantum Cryptography — NIST FIPS 204 ML-DSA TypeScript SDK & Web4 Transaction Signer",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test tests/sdk.test.mjs",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@qmoosa/pqc-mldsa-protocol": "file:../qmoosa-pqc-mldsa-protocol",
+    "@qmoosa/pqc-mldsa-engine": "file:../qmoosa-pqc-mldsa-engine"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  },
+  "keywords": [
+    "qmoosa",
+    "pqc",
+    "fips-204",
+    "ml-dsa",
+    "dilithium",
+    "sdk",
+    "transaction-signer",
+    "web4"
+  ],
+  "author": "elon00",
+  "license": "MIT"
+}
